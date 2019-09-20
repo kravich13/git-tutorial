@@ -1,0 +1,17 @@
+git init  - инициализация 
+
+git status - проверка статуса 
+git log - вывести лог коммитов
+
+git add index.html   - добавить файл для отслеживания
+git add * - добавить все файлы в папке
+git commit -m "text" - подтвердить добавленные изменения
+
+git push origin master - залить изменения из ветки master на удаленный репозиторий origin
+git pull origin master - выкачать и применить последние изменения в ветку master из удаленного репозитория origin
+
+git remote add origin git@github.com:kravich13/html_css_lessons.git - добавить удаленный репозиторий с имененм origin по указанному адресу
+
+
+
+ 
