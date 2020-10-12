@@ -56,3 +56,22 @@ git commit -m "deleted"
 # Все папки и файлы, котоырые были удалены в папке на компе теперь будут удалены с репозитория в гите
 git push origin master
 ```
+
+* Генерация `SSH` ключей для `git clone ssh-url`:
+
+```bash
+# В терминале со всеми репозиториями на компе: 
+
+ssh-keygen
+# далее далее далее
+
+# будет показана папка с путём к файлу с ключём в скрытых файлах
+# /home/vladislav/.ssh/id_rsa.pub
+
+# копируем весь ключ вида: 
+# ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFh9qXUoPuzUTIDUSLtnEHQEtCp4XnYElKeS22hSCmFKHo8FjmnMkgz9O1kRJBLBE/ZtbU93c1STj+NfbVRXxNSEz9UV0R+cXMERH4gTM4DJShoxjApo7uwlSFNXNDZR1E+PFMha1f5AtuGjqX0XeLnzEEjLZvzXNNx+zGOwKBqqJco0JCm+R/EHp9FUtHIwDyuBQFruxh03W+sA36M6D7XMUPqwE7YrgvLYVrgDtNKlpmt/v9fE5BmV6612TtmWfxnC6Zl7/+GK+SzrfOpARFkiLCMwvm10JUqHaZwDeoFiZtfL+joJcZs6KZvUXZ6xKNMj7C+hP6LB5CtTBa72B+xaK2SadWLsF9QvsStsufKYoLHSeQWTY0SI0GWGhv1Ap+YhUtM4Uf3ABrRoB8MY3aXcdKkvtGOA6sP9LMPf+FJw/b7hD508V7ieMTv8dKrsnpoViifvjL5fbstI16p+NgQwfovkevi6c5aYhAqo1xSn847lAmQQ/5ZKlKJ63HL6E= 
+
+# после преходим в git - setting - SSH - new Add key и вводим тут этот ключ.
+
+git init ssh-url
+```
